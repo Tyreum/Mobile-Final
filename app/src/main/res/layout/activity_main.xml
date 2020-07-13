@@ -66,14 +66,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Login"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@color/button"
+                android:textColorHint="#FFF"/>
 
             <Button
                 android:id="@+id/btnRegister"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Registrar"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:background="@color/button"
+                android:textColorHint="#FFF"/>
 
         </LinearLayout>
 
