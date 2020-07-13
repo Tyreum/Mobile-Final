@@ -11,7 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".activity_ListaBairros"></activity>
+        <activity android:name=".activity_AddAlimentos"></activity>
+        <activity android:name=".activity_ListaAlimentos" />
+        <activity android:name=".activity_ListaBairros" />
         <activity android:name=".activity_Home" />
         <activity android:name=".activity_PassForgot" />
         <activity android:name=".activity_Register" />
