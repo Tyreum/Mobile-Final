@@ -11,13 +11,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".activity_DetalheBairro"></activity>
-        <activity android:name=".activity_AddAlimentos" />
-        <activity android:name=".activity_ListaAlimentos" />
-        <activity android:name=".activity_ListaBairros" />
+        <activity android:name=".activity_AddBairro"></activity>
+        <activity android:name=".activity_DetalheBairro" />
+        <activity android:name=".activity_AddAlimento" />
+        <activity android:name=".activity_ListaAlimento" />
+        <activity android:name=".activity_ListaBairro" />
         <activity android:name=".activity_Home" />
         <activity android:name=".activity_PassForgot" />
-        <activity android:name=".activity_Register" />
+        <activity android:name=".activity_Registrar" />
         <activity
             android:name=".SplashScreen"
             android:theme="@style/SplashTheme">

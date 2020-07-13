@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class activity_ListaBairros extends AppCompatActivity {
+public class activity_AddAlimento extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_lista_bairros);
+        setContentView(R.layout.layout_add_alimentos);
     }
 }
