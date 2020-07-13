@@ -15,6 +15,15 @@
         android:layout_marginTop="50px"
         android:paddingRight="30px"/>
 
+    <ImageView
+        android:layout_width="400sp"
+        android:layout_height="400sp"
+        android:src="@drawable/mapa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="950px"
+        android:paddingRight="10px"
+        android:paddingLeft="10px"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -82,6 +91,8 @@
             android:textColor="@color/TextDefault"
             android:paddingLeft="10px"/>
 
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -109,6 +120,7 @@
                 android:textColorHint="#FFF"/>
 
         </LinearLayout>
+
 
     </LinearLayout>
 
