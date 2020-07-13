@@ -4,54 +4,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".activity_ListaBairros"
     android:background="@color/background">
 
     <ImageView
-        android:layout_width="300sp"
-        android:layout_height="200sp"
+        android:layout_width="200sp"
+        android:layout_height="50sp"
         android:src="@drawable/background_splash"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="300px"/>
+        android:layout_marginTop="50px"
+        android:paddingRight="30px"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="950px">
+        android:layout_marginTop="250px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bairros:"
+            android:textSize="100px"
+            android:layout_marginTop="10px"/>
+
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login:"
+            android:text="Grajaú"
             android:textSize="80px"
             android:textColor="@color/TextDefault"
-            android:paddingLeft="150px"/>
-
-        <EditText
-            android:id="@+id/edLogin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="150px"
-            android:layout_marginRight="150px"
-            android:hint="Login" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Senha:"
-            android:textSize="80px"
-            android:textColor="@color/TextDefault"
-            android:paddingLeft="150px"
+            android:paddingLeft="10px"
             android:layout_marginTop="50px"/>
 
-        <EditText
-            android:id="@+id/etSenha"
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="150px"
-            android:layout_marginRight="150px"
-            android:hint="Senha" />
+            android:text="Zona Sul"
+            android:textSize="80px"
+            android:textColor="@color/TextDefault"
+            android:paddingLeft="10px"/>
+
+        <EditText
+            android:id="@+id/bairro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_seta"
+            android:layout_marginTop="-50px"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Interlagos"
+            android:textSize="80px"
+            android:textColor="@color/TextDefault"
+            android:paddingLeft="10px"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zona Sul"
+            android:textSize="80px"
+            android:textColor="@color/TextDefault"
+            android:paddingLeft="10px"/>
+
+        <EditText
+            android:id="@+id/bairro2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_seta"
+            android:layout_marginTop="-50px"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -59,36 +83,27 @@
             android:orientation="horizontal"
             android:layout_marginRight="150px"
             android:layout_marginLeft="150px"
-            android:layout_marginTop="80px">
+            android:layout_marginTop="600px">
 
             <Button
-                android:id="@+id/btnLogin"
+                android:id="@+id/btnVoltar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Login"
+                android:text="Voltar"
                 android:layout_weight="1"
                 android:background="@color/button"
                 android:textColorHint="#FFF"/>
 
             <Button
-                android:id="@+id/btnRegister"
+                android:id="@+id/btnEditar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Registrar"
+                android:text="Editar"
                 android:layout_weight="1"
                 android:background="@color/button"
                 android:textColorHint="#FFF"/>
 
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/txtRecover"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Forgot My Password"
-            android:gravity="center"
-            android:layout_marginTop="30px"
-            android:clickable="true" />
 
     </LinearLayout>
 

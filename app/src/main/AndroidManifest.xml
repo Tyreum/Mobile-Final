@@ -11,8 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".activity_PassForgot"></activity>
-        <activity android:name=".activity_cadastro" />
+        <activity android:name=".activity_ListaBairros"></activity>
+        <activity android:name=".activity_Home" />
+        <activity android:name=".activity_PassForgot" />
+        <activity android:name=".activity_Register" />
         <activity
             android:name=".SplashScreen"
             android:theme="@style/SplashTheme">
@@ -22,7 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity_Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

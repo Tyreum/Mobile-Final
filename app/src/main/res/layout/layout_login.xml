@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_Login"
+    android:background="@color/background">
+
+    <ImageView
+        android:layout_width="300sp"
+        android:layout_height="200sp"
+        android:src="@drawable/background_splash"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="950px">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login:"
+            android:textSize="80px"
+            android:textColor="@color/TextDefault"
+            android:paddingLeft="150px"/>
+
+        <EditText
+            android:id="@+id/edLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150px"
+            android:layout_marginRight="150px"
+            android:hint="Login" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Senha:"
+            android:textSize="80px"
+            android:textColor="@color/TextDefault"
+            android:paddingLeft="150px"
+            android:layout_marginTop="50px"/>
+
+        <EditText
+            android:id="@+id/etSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150px"
+            android:layout_marginRight="150px"
+            android:hint="Senha" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="150px"
+            android:layout_marginLeft="150px"
+            android:layout_marginTop="80px">
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:layout_weight="1"
+                android:background="@color/button"
+                android:textColorHint="#FFF"/>
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrar"
+                android:layout_weight="1"
+                android:background="@color/button"
+                android:textColorHint="#FFF"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtRecover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot My Password"
+            android:gravity="center"
+            android:layout_marginTop="30px"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+</RelativeLayout>
