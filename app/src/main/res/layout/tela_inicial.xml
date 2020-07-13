@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/btnAddBairro"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="ADICIONAR BAIRRO"
+            android:layout_weight="1" />
+        <Button
+            android:layout_marginLeft="30dp"
+            android:id="@+id/btnAddAlimento"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="ADICIONAR ALIMENTO"
+            android:layout_weight="1" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:layout_width="130dp"
+                android:layout_height="90dp"
+                android:src="@drawable/my_location"
+                android:layout_weight="1"/>
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="83dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/add_location" />
+        </LinearLayout>
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Distribuição de alimentos em areas de maior necessidade"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textSize="80px"
+            android:textColor="@color/TextDefault" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:layout_width="130dp"
+                android:layout_height="90dp"
+                android:src="@drawable/pizza"
+                android:layout_weight="1"/>
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="83dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/fastfood" />
+        </LinearLayout>
+        <Button
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/btnVerBairro"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="VERIFICAR BAIRRO"
+            android:layout_weight="1" />
+        <Button
+            android:layout_marginLeft="30dp"
+            android:id="@+id/btnVerAlimento"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="VERIFICAR ALIMENTO"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+</RelativeLayout>
