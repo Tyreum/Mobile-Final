@@ -63,21 +63,22 @@
 
             <Button
                 android:id="@+id/btnLogin"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Login"
+                android:textColor="@color/colorAccent"
                 android:layout_weight="1"
-                android:background="@color/button"
-                android:textColorHint="#FFF"/>
+                android:background="@color/button"/>
 
             <Button
                 android:id="@+id/btnRegister"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Registrar"
+                android:textColor="@color/colorAccent"
                 android:layout_weight="1"
-                android:background="@color/button"
-                android:textColorHint="#FFF"/>
+                android:layout_marginLeft="20px"
+                android:background="@color/button"/>
 
         </LinearLayout>
 
@@ -86,6 +87,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Forgot My Password"
+            android:textColor="@color/TextDefault"
             android:gravity="center"
             android:layout_marginTop="30px"
             android:clickable="true" />

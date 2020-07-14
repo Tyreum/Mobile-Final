@@ -24,18 +24,23 @@
             android:layout_marginTop="30dp"
             android:layout_marginLeft="30dp"
             android:id="@+id/btnAddBairro"
+            android:background="@color/button"
             android:drawableLeft="@drawable/ic_adicionar"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:text="ADICIONAR BAIRRO"
+            android:textColor="@color/colorAccent"
             android:layout_weight="1" />
         <Button
+            android:layout_marginTop="15px"
             android:layout_marginLeft="30dp"
             android:id="@+id/btnAddAlimento"
+            android:background="@color/button"
             android:drawableLeft="@drawable/ic_adicionar"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:text="ADICIONAR ALIMENTO"
+            android:textColor="@color/colorAccent"
             android:layout_weight="1" />
         <LinearLayout
             android:layout_width="match_parent"
@@ -79,21 +84,26 @@
                 android:src="@drawable/fastfood" />
         </LinearLayout>
         <Button
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="50dp"
             android:layout_marginLeft="30dp"
             android:id="@+id/btnVerBairro"
+            android:background="@color/button"
             android:drawableLeft="@drawable/ic_pesquisar"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:text="VERIFICAR BAIRRO"
+            android:textColor="@color/colorAccent"
             android:layout_weight="1" />
         <Button
+            android:layout_marginTop="15px"
             android:layout_marginLeft="30dp"
             android:id="@+id/btnVerAlimento"
+            android:background="@color/button"
             android:drawableLeft="@drawable/ic_pesquisar"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:text="VERIFICAR ALIMENTO"
+            android:textColor="@color/colorAccent"
             android:layout_weight="1" />
 
     </LinearLayout>

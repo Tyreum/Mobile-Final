@@ -25,7 +25,6 @@
             android:layout_marginTop="100dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:hint="Login"
             android:textColorHint="@color/TextDefault"
             android:background="@drawable/inputbox"
@@ -35,7 +34,6 @@
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:hint="Email"
             android:textColorHint="@color/TextDefault"
             android:background="@drawable/inputbox"
@@ -45,7 +43,6 @@
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:hint="Senha"
             android:textColorHint="@color/TextDefault"
             android:background="@drawable/inputbox"
@@ -55,7 +52,6 @@
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:hint="Confirme a senha"
             android:textColorHint="@color/TextDefault"
             android:background="@drawable/inputbox"
@@ -66,7 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Registrar"
-            android:textColor="#FFF"
+            android:textColor="@color/colorAccent"
             android:background="@drawable/button"/>
 
     </LinearLayout>

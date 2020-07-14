@@ -23,7 +23,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Será enviado um código de confirmação para o email enviado"/>
+            android:text="Será enviado um código de confirmação para o email registrado"/>
 
 
         <TextView
@@ -43,9 +43,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Recuperar senha"
+            android:textColor="@color/colorAccent"
             android:background="@drawable/button"
-            android:layout_marginTop="15px"
-            android:textColorHint="#FFF"/>
+            android:layout_marginTop="15px"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -63,9 +63,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Validar código"
+            android:textColor="@color/colorAccent"
             android:background="@drawable/button"
-            android:layout_marginTop="15px"
-            android:textColorHint="#FFF"/>
+            android:layout_marginTop="15px"/>
 
     </LinearLayout>
 
