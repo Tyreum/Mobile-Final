@@ -21,36 +21,40 @@
         android:layout_marginTop="150px">
 
         <Button
+            android:id="@+id/btnAddBairro"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@color/button"
+            android:drawableLeft="@drawable/ic_adicionar"
+            android:text="ADICIONAR BAIRRO"
             android:layout_marginTop="30dp"
             android:layout_marginLeft="30dp"
-            android:id="@+id/btnAddBairro"
-            android:background="@color/button"
-            android:drawableLeft="@drawable/ic_adicionar"
+            android:textColor="@color/colorAccent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnAddAlimento"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:text="ADICIONAR BAIRRO"
-            android:textColor="@color/colorAccent"
-            android:layout_weight="1" />
-        <Button
+            android:background="@color/button"
+            android:drawableLeft="@drawable/ic_adicionar"
+            android:text="ADICIONAR ALIMENTO"
             android:layout_marginTop="15px"
             android:layout_marginLeft="30dp"
-            android:id="@+id/btnAddAlimento"
-            android:background="@color/button"
-            android:drawableLeft="@drawable/ic_adicionar"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:text="ADICIONAR ALIMENTO"
             android:textColor="@color/colorAccent"
             android:layout_weight="1" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <ImageView
-                android:layout_marginTop="30dp"
                 android:layout_width="130dp"
                 android:layout_height="90dp"
                 android:src="@drawable/my_location"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:layout_marginTop="30dp"/>
+
             <ImageView
                 android:layout_width="130dp"
                 android:layout_height="83dp"
@@ -58,24 +62,28 @@
                 android:layout_weight="1"
                 android:src="@drawable/add_location" />
         </LinearLayout>
+
         <TextView
-            android:layout_marginTop="40dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Distribuição de alimentos em áreas de maior necessidade"
             android:gravity="center"
+            android:layout_marginTop="40dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
             android:textSize="80px"
             android:textColor="@color/TextDefault" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <ImageView
-                android:layout_marginTop="50dp"
                 android:layout_width="130dp"
                 android:layout_height="90dp"
                 android:src="@drawable/pizza"
+                android:layout_marginTop="50dp"
                 android:layout_weight="1"/>
+
             <ImageView
                 android:layout_width="130dp"
                 android:layout_height="83dp"
@@ -83,26 +91,27 @@
                 android:layout_weight="1"
                 android:src="@drawable/fastfood" />
         </LinearLayout>
+
         <Button
-            android:layout_marginTop="50dp"
-            android:layout_marginLeft="30dp"
             android:id="@+id/btnVerBairro"
-            android:background="@color/button"
-            android:drawableLeft="@drawable/ic_pesquisar"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
+            android:background="@color/button"
+            android:drawableLeft="@drawable/ic_pesquisar"
             android:text="VERIFICAR BAIRRO"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
             android:textColor="@color/colorAccent"
             android:layout_weight="1" />
         <Button
-            android:layout_marginTop="15px"
-            android:layout_marginLeft="30dp"
             android:id="@+id/btnVerAlimento"
-            android:background="@color/button"
-            android:drawableLeft="@drawable/ic_pesquisar"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
+            android:background="@color/button"
+            android:drawableLeft="@drawable/ic_pesquisar"
             android:text="VERIFICAR ALIMENTO"
+            android:layout_marginTop="15px"
+            android:layout_marginLeft="30dp"
             android:textColor="@color/colorAccent"
             android:layout_weight="1" />
 
