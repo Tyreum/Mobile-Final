@@ -15,14 +15,31 @@
         android:layout_marginTop="50px"
         android:paddingRight="30px"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Coloque sua localização abaixo:"
+        android:textSize="70px"
+        android:textColor="@color/TextDefault"
+        android:layout_marginTop="900px"/>
+
     <ImageView
-        android:layout_width="350sp"
-        android:layout_height="400sp"
-        android:src="@drawable/mapa"
+        android:layout_width="250sp"
+        android:layout_height="200sp"
+        android:src="@drawable/ic_foto"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="850px"
+        android:layout_marginTop="1050px"
         android:paddingRight="10px"
         android:paddingLeft="10px"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inserir imagem"
+        android:textSize="80px"
+        android:textColor="@color/TextDefault"
+        android:layout_marginTop="1550px"
+        android:paddingLeft="280px"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,7 +53,7 @@
             android:text="Adicionar Bairro"
             android:textSize="80px"
             android:textColor="@color/TextDefault"
-            android:paddingLeft="200px"/>
+            android:paddingLeft="250px"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -66,19 +83,21 @@
             android:layout_marginTop="850px">
 
             <Button
-                android:id="@+id/btnLogin"
+                android:id="@+id/btnVoltar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Login"
+                android:text="Voltar"
+                android:drawableLeft="@drawable/ic_seta_voltar"
                 android:textColor="@color/colorAccent"
                 android:layout_weight="1"
                 android:background="@color/button"/>
 
             <Button
-                android:id="@+id/btnRegister"
+                android:id="@+id/btnAdicionar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Registrar"
+                android:drawableRight="@drawable/ic_adicionar"
+                android:text="Adicionar"
                 android:textColor="@color/colorAccent"
                 android:layout_weight="1"
                 android:layout_marginLeft="20px"

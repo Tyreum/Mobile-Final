@@ -105,19 +105,9 @@
                 android:id="@+id/btnVoltar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_seta_voltar"
                 android:text="Voltar"
                 android:textColor="@color/colorAccent"
-                android:layout_weight="1"
-                android:background="@color/button"/>
-
-            <Button
-                android:id="@+id/btnEditar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Editar"
-                android:textColor="@color/colorAccent"
-                android:layout_weight="1"
-                android:layout_marginLeft="20px"
                 android:background="@color/button"/>
 
         </LinearLayout>
