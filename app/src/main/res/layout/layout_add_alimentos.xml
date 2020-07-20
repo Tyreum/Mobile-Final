@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_AddAlimento"
-    android:background="@color/background">
+    tools:context=".Activity_AddAlimento"
+    android:background="@color/background"
+    android:layout_margin="30dp">
 
     <ImageView
         android:layout_width="200sp"
@@ -27,9 +28,11 @@
             android:text="Adicionar Alimento"
             android:textSize="80px"
             android:textColor="@color/TextDefault"
-            android:paddingLeft="200px"/>
+            android:paddingLeft="120px"/>
 
         <EditText
+            android:background="@color/EditText"
+            android:padding="15px"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Alimento"
@@ -37,6 +40,9 @@
             android:layout_marginTop="40px"/>
 
         <EditText
+            android:layout_marginTop="10dp"
+            android:background="@color/EditText"
+            android:padding="15px"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Data de validade"
@@ -48,7 +54,7 @@
             android:orientation="horizontal"
             android:layout_marginRight="150px"
             android:layout_marginLeft="150px"
-            android:layout_marginTop="1000px">
+            android:layout_marginTop="850px">
 
             <Button
                 android:id="@+id/btnVoltar"

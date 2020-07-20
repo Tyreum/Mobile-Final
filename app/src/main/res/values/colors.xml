@@ -7,4 +7,5 @@
     <color name="inputbox">#C4C4C4</color>
     <color name="button">#3785e9</color>
     <color name="TextDefault">#303030</color>
+    <color name="EditText">#E8F3FF</color>
 </resources>

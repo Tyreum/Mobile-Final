@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_PassForgot"
-    android:background="@color/background">
+    tools:context=".Activity_PassForgot"
+    android:background="@color/background"
+    android:layout_margin="30dp">
 
     <ImageView
         android:layout_width="200sp"
@@ -33,11 +34,16 @@
             android:layout_marginTop="50px"/>
 
         <EditText
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/EditText"
+            android:padding="15px"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"/>
 
         <Button
+            android:id="@+id/SendEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Recuperar senha"
@@ -53,11 +59,16 @@
             android:layout_marginTop="50px"/>
 
         <EditText
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/EditText"
+            android:padding="15px"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Código"/>
 
         <Button
+            android:id="@+id/btnValidCode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="150px"

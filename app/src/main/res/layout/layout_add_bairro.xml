@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_AddBairro"
-    android:background="@color/background">
+    tools:context=".Activity_AddBairro"
+    android:background="@color/background"
+    android:layout_margin="30dp">
 
     <ImageView
         android:layout_width="200sp"
@@ -24,8 +25,8 @@
         android:layout_marginTop="900px"/>
 
     <ImageView
-        android:layout_width="250sp"
-        android:layout_height="200sp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:src="@drawable/ic_foto"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="1050px"
@@ -38,8 +39,8 @@
         android:text="Inserir imagem"
         android:textSize="80px"
         android:textColor="@color/TextDefault"
-        android:layout_marginTop="1550px"
-        android:paddingLeft="280px"/>
+        android:layout_marginTop="1450px"
+        android:paddingLeft="185px"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -56,6 +57,8 @@
             android:paddingLeft="250px"/>
 
         <EditText
+            android:background="@color/EditText"
+            android:padding="15px"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Bairro"
@@ -63,15 +66,21 @@
             android:layout_marginTop="40px"/>
 
         <EditText
+            android:background="@color/EditText"
+            android:padding="15px"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Região"
+            android:layout_marginTop="10dp"
             android:drawableRight="@drawable/ic_adicionar"/>
 
         <EditText
+            android:background="@color/EditText"
+            android:padding="15px"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Alimentos faltando"
+            android:layout_marginTop="10dp"
             android:drawableRight="@drawable/ic_adicionar"/>
 
         <LinearLayout
@@ -80,7 +89,7 @@
             android:orientation="horizontal"
             android:layout_marginRight="150px"
             android:layout_marginLeft="150px"
-            android:layout_marginTop="850px">
+            android:layout_marginTop="750px">
 
             <Button
                 android:id="@+id/btnVoltar"

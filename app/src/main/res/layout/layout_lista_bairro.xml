@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_ListaBairro"
-    android:background="@color/background">
+    tools:context=".Activity_ListaBairro"
+    android:background="@color/background"
+    android:layout_margin="30dp">
 
     <ImageView
         android:layout_width="200sp"
@@ -84,7 +85,7 @@
             android:orientation="horizontal"
             android:layout_marginRight="150px"
             android:layout_marginLeft="150px"
-            android:layout_marginTop="600px">
+            android:layout_marginTop="550px">
 
             <Button
                 android:id="@+id/btnVoltar"

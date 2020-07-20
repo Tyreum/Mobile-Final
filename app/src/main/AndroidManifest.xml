@@ -11,14 +11,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".activity_AddBairro"></activity>
-        <activity android:name=".activity_DetalheBairro" />
-        <activity android:name=".activity_AddAlimento" />
-        <activity android:name=".activity_ListaAlimento" />
-        <activity android:name=".activity_ListaBairro" />
-        <activity android:name=".activity_Home" />
-        <activity android:name=".activity_PassForgot" />
-        <activity android:name=".activity_Registrar" />
+        <activity android:name=".Activity_AddBairro"></activity>
+        <activity android:name=".Activity_DetalheBairro" />
+        <activity android:name=".Activity_AddAlimento" />
+        <activity android:name=".Activity_ListaAlimento" />
+        <activity android:name=".Activity_ListaBairro" />
+        <activity android:name=".Activity_Home" />
+        <activity android:name=".Activity_PassForgot" />
+        <activity android:name=".Activity_Registrar" />
         <activity
             android:name=".SplashScreen"
             android:theme="@style/SplashTheme">
@@ -28,7 +28,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity_Login">
+        <activity android:name=".Activity_Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_Home"
-    android:background="@color/background">
+    tools:context=".Activity_Home"
+    android:background="@color/background"
+    android:layout_margin="30dp">
 
     <ImageView
         android:layout_width="200sp"
@@ -22,25 +23,23 @@
 
         <Button
             android:id="@+id/btnAddBairro"
-            android:layout_width="350dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/button"
             android:drawableLeft="@drawable/ic_adicionar"
             android:text="ADICIONAR BAIRRO"
             android:layout_marginTop="30dp"
-            android:layout_marginLeft="30dp"
             android:textColor="@color/colorAccent"
             android:layout_weight="1"/>
 
         <Button
             android:id="@+id/btnAddAlimento"
-            android:layout_width="350dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/button"
             android:drawableLeft="@drawable/ic_adicionar"
             android:text="ADICIONAR ALIMENTO"
             android:layout_marginTop="15px"
-            android:layout_marginLeft="30dp"
             android:textColor="@color/colorAccent"
             android:layout_weight="1" />
 
@@ -94,24 +93,22 @@
 
         <Button
             android:id="@+id/btnVerBairro"
-            android:layout_width="350dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/button"
             android:drawableLeft="@drawable/ic_pesquisar"
             android:text="VERIFICAR BAIRRO"
             android:layout_marginTop="50dp"
-            android:layout_marginLeft="30dp"
             android:textColor="@color/colorAccent"
             android:layout_weight="1" />
         <Button
             android:id="@+id/btnVerAlimento"
-            android:layout_width="350dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/button"
             android:drawableLeft="@drawable/ic_pesquisar"
             android:text="VERIFICAR ALIMENTO"
             android:layout_marginTop="15px"
-            android:layout_marginLeft="30dp"
             android:textColor="@color/colorAccent"
             android:layout_weight="1" />
 
