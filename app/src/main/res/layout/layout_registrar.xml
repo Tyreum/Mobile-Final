@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity_Registrar"
-    android:background="@color/background"
     android:layout_margin="30dp">
 
     <ImageView
@@ -16,24 +15,25 @@
         android:layout_marginTop="50px"
         android:paddingRight="30px"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="300px"
-        android:text="Digite suas informações abaixo:"/>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_marginTop="150px">
+        android:layout_marginTop="180px"
+        android:background="">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Digite suas informações abaixo:"/>
 
         <EditText
             android:background="@color/EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Login"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="50dp"
             android:padding="15px"/>
 
         <EditText
