@@ -17,10 +17,10 @@
 
     <ImageView
         android:layout_width="350sp"
-        android:layout_height="400sp"
+        android:layout_height="180sp"
         android:src="@drawable/mapa"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="850px"
+        android:layout_marginTop="1090px"
         android:paddingRight="10px"
         android:paddingLeft="10px"/>
 
@@ -31,6 +31,7 @@
         android:layout_marginTop="250px">
 
         <TextView
+            android:id="@+id/NomeBairro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Grajaú"
@@ -49,68 +50,29 @@
             android:paddingLeft="10px"
             android:layout_marginTop="20px"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Alimentos faltando"
-            android:textSize="80px"
-            android:layout_marginTop="80px"
-            android:textColor="@color/TextDefault"
-            android:paddingLeft="10px"/>
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Arroz"
-            android:textSize="70px"
-            android:textColor="@color/TextDefault"
-            android:paddingLeft="10px"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Açucar"
-            android:textSize="70px"
-            android:textColor="@color/TextDefault"
-            android:paddingLeft="10px"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Feijão"
-            android:textSize="70px"
-            android:textColor="@color/TextDefault"
-            android:paddingLeft="10px"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Macarrão"
-            android:textSize="70px"
-            android:textColor="@color/TextDefault"
-            android:paddingLeft="10px"/>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginRight="150px"
-            android:layout_marginLeft="150px"
-            android:layout_marginTop="530px">
+            android:layout_marginTop="10px">
 
-            <Button
-                android:id="@+id/btnVoltar"
+            <ListView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/ic_seta_voltar"
-                android:text="Voltar"
-                android:textColor="@color/colorAccent"
-                android:background="@color/button"/>
+                android:layout_height="205dp"/>
 
         </LinearLayout>
 
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_seta_voltar"
+        android:text="Voltar"
+        android:textColor="@color/colorAccent"
+        android:background="@color/button"
+        android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>
