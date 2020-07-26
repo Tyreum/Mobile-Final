@@ -19,8 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_marginTop="180px"
-        android:background="">
+        android:layout_marginTop="180px">
 
         <TextView
             android:layout_width="wrap_content"
@@ -32,7 +31,7 @@
             android:background="@color/EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Login"
+            android:hint="Email"
             android:layout_marginTop="50dp"
             android:padding="15px"/>
 
@@ -40,44 +39,29 @@
             android:background="@color/EditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
-            android:layout_marginTop="20dp"
-            android:padding="15px"/>
-
-        <EditText
-            android:background="@color/EditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:hint="Senha"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="50dp"
             android:padding="15px"/>
 
-        <EditText
-            android:background="@color/EditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Confirme a senha"
-            android:layout_marginTop="20dp"
-            android:padding="15px"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginRight="150px"
-        android:layout_marginLeft="150px"
-        android:layout_marginTop="80px">
-
-        <Button
-            android:id="@+id/btnNewRegister"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Registrar"
-            android:textColor="@color/colorAccent"
-            android:layout_weight="1"
-            android:layout_marginLeft="20px"
-            android:background="@color/button"/>
-
-        </LinearLayout>
     </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/id_recyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnNewRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:textColor="@color/colorAccent"
+        android:layout_weight="1"
+        android:background="@color/button"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:layout_marginTop="360dp"
+        />
+
 </RelativeLayout>

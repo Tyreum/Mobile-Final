@@ -21,62 +21,10 @@
         android:orientation="vertical"
         android:layout_marginTop="250px">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Bairros:"
-            android:textColor="@color/TextDefault"
-            android:textSize="100px"
-            android:layout_marginTop="10px"/>
-
-
-        <TextView
+        <ListView
+            android:id="@+id/ListaBairros"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Grajaú"
-            android:textSize="80px"
-            android:textColor="@color/TextDefault"
-            android:paddingLeft="10px"
-            android:layout_marginTop="50px"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Zona Sul"
-            android:textSize="80px"
-            android:textColor="@color/TextDefault"
-            android:paddingLeft="10px"/>
-
-        <EditText
-            android:id="@+id/bairro"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableRight="@drawable/ic_seta"
-            android:layout_marginTop="-50px"/>
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Interlagos"
-            android:textSize="80px"
-            android:textColor="@color/TextDefault"
-            android:paddingLeft="10px"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Zona Sul"
-            android:textSize="80px"
-            android:textColor="@color/TextDefault"
-            android:paddingLeft="10px"/>
-
-        <EditText
-            android:id="@+id/bairro2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableRight="@drawable/ic_seta"
-            android:layout_marginTop="-50px"/>
+            android:layout_height="500dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -84,7 +32,7 @@
             android:orientation="horizontal"
             android:layout_marginRight="150px"
             android:layout_marginLeft="150px"
-            android:layout_marginTop="550px">
+            android:layout_marginTop="25dp">
 
             <Button
                 android:id="@+id/btnVoltar"
