@@ -39,13 +39,6 @@ public class Activity_Home extends AppCompatActivity {
                 openActivity_ListaBairro();
             }
         });
-        btnVerAlimento = (Button) findViewById(R.id.btnVerAlimento);
-        btnVerAlimento.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openActivity_ListaAlimento();
-            }
-        });
 
     }
     public void openActivity_AddBairro(){
@@ -58,10 +51,6 @@ public class Activity_Home extends AppCompatActivity {
     }
     public void openActivity_ListaBairro(){
         Intent intent = new Intent(this, Activity_ListaBairro.class);
-        startActivity(intent);
-    }
-    public void openActivity_ListaAlimento(){
-        Intent intent = new Intent(this, Activity_ListaAlimento.class);
         startActivity(intent);
     }
 }
