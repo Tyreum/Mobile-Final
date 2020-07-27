@@ -11,14 +11,12 @@
         android:layout_width="200sp"
         android:layout_height="50sp"
         android:src="@drawable/background_splash"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50px"/>
+        android:layout_centerHorizontal="true" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="150px">
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/btnAddBairro"
@@ -27,7 +25,7 @@
             android:background="@color/button"
             android:drawableLeft="@drawable/ic_adicionar"
             android:text="ADICIONAR BAIRRO"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="55dp"
             android:textColor="@color/colorAccent"
             android:layout_weight="1"/>
 
@@ -44,19 +42,18 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp" >
 
             <ImageView
                 android:layout_width="130dp"
                 android:layout_height="90dp"
                 android:src="@drawable/my_location"
-                android:layout_weight="1"
-                android:layout_marginTop="30dp"/>
+                android:layout_weight="1" />
 
             <ImageView
                 android:layout_width="130dp"
                 android:layout_height="83dp"
-                android:layout_marginTop="30dp"
                 android:layout_weight="1"
                 android:src="@drawable/add_location" />
         </LinearLayout>
@@ -66,7 +63,6 @@
             android:layout_height="wrap_content"
             android:text="Distribuição de alimentos em áreas de maior necessidade"
             android:gravity="center"
-            android:layout_marginTop="40dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
             android:textSize="80px"
             android:textColor="@color/TextDefault" />
@@ -79,13 +75,11 @@
                 android:layout_width="130dp"
                 android:layout_height="90dp"
                 android:src="@drawable/pizza"
-                android:layout_marginTop="50dp"
                 android:layout_weight="1"/>
 
             <ImageView
                 android:layout_width="130dp"
                 android:layout_height="83dp"
-                android:layout_marginTop="50dp"
                 android:layout_weight="1"
                 android:src="@drawable/fastfood" />
         </LinearLayout>
@@ -97,7 +91,7 @@
             android:background="@color/button"
             android:drawableLeft="@drawable/ic_pesquisar"
             android:text="VERIFICAR BAIRRO"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="10dp"
             android:textColor="@color/colorAccent"
             android:layout_weight="1" />
         <Button
