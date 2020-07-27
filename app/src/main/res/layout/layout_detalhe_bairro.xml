@@ -40,11 +40,10 @@
             android:textSize="100px"
             android:layout_marginTop="10px"/>
 
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Zona Sul"
+            android:text="Alimentos Disponíveis:"
             android:textSize="80px"
             android:textColor="@color/TextDefault"
             android:paddingLeft="10px" />

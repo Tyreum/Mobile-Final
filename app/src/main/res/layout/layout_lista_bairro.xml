@@ -32,7 +32,7 @@
             android:orientation="horizontal"
             android:layout_marginRight="150px"
             android:layout_marginLeft="150px"
-            android:layout_marginTop="25dp">
+            android:layout_marginTop="10dp">
 
             <Button
                 android:id="@+id/btnVoltar"

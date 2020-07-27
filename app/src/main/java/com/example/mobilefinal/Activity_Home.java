@@ -46,7 +46,7 @@ public class Activity_Home extends AppCompatActivity {
         startActivity(intent);
     }
     public void openActivity_AddAlimento(){
-        Intent intent = new Intent(this, Activity_AddBairro.class);
+        Intent intent = new Intent(this, Activity_AddAlimento.class);
         startActivity(intent);
     }
     public void openActivity_ListaBairro(){

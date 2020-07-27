@@ -16,7 +16,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
 
         <Button
             android:id="@+id/btnAddBairro"
@@ -43,7 +44,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="10dp" >
+            android:paddingTop="15dp" >
 
             <ImageView
                 android:layout_width="130dp"
@@ -69,7 +70,9 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
 
             <ImageView
                 android:layout_width="130dp"
@@ -91,17 +94,7 @@
             android:background="@color/button"
             android:drawableLeft="@drawable/ic_pesquisar"
             android:text="VERIFICAR BAIRRO"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/colorAccent"
-            android:layout_weight="1" />
-        <Button
-            android:id="@+id/btnVerAlimento"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/button"
-            android:drawableLeft="@drawable/ic_pesquisar"
-            android:text="VERIFICAR ALIMENTO"
-            android:layout_marginTop="15px"
+            android:layout_marginTop="20dp"
             android:textColor="@color/colorAccent"
             android:layout_weight="1" />
 
