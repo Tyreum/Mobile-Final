@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity_DetalheBairro"
-    android:layout_margin="30dp">
+    android:layout_margin="10dp">
 
     <ImageView
         android:layout_width="200sp"
@@ -17,10 +17,10 @@
 
     <ImageView
         android:layout_width="350sp"
-        android:layout_height="180sp"
+        android:layout_height="160sp"
         android:src="@drawable/mapa"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="1090px"
+        android:layout_marginTop="375dp"
         android:paddingRight="10px"
         android:paddingLeft="10px"/>
 
@@ -28,7 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="250px">
+        android:layout_marginTop="70dp">
 
         <TextView
             android:id="@+id/NomeBairro"
@@ -47,8 +47,7 @@
             android:text="Zona Sul"
             android:textSize="80px"
             android:textColor="@color/TextDefault"
-            android:paddingLeft="10px"
-            android:layout_marginTop="20px"/>
+            android:paddingLeft="10px" />
 
         <LinearLayout
             android:layout_width="match_parent"
