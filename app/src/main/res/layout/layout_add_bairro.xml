@@ -53,7 +53,7 @@
             android:text="Adicionar Bairro"
             android:textSize="80px"
             android:textColor="@color/TextDefault"
-            android:paddingLeft="250px"/>
+            android:paddingLeft="180px"/>
 
         <EditText
             android:background="@color/EditText"
@@ -62,6 +62,7 @@
             android:layout_height="wrap_content"
             android:hint="Bairro"
             android:drawableRight="@drawable/ic_adicionar"
+            android:drawableTint="@color/TextDefault"
             android:layout_marginTop="40px"/>
 
         <EditText
@@ -71,6 +72,7 @@
             android:layout_height="wrap_content"
             android:hint="Região"
             android:layout_marginTop="10dp"
+            android:drawableTint="@color/TextDefault"
             android:drawableRight="@drawable/ic_adicionar"/>
 
         <EditText
@@ -80,6 +82,7 @@
             android:layout_height="wrap_content"
             android:hint="Alimentos faltando"
             android:layout_marginTop="10dp"
+            android:drawableTint="@color/TextDefault"
             android:drawableRight="@drawable/ic_adicionar"/>
 
         <LinearLayout

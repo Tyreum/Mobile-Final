@@ -1,6 +1,7 @@
 package com.example.mobilefinal;
 
 import android.app.usage.UsageEvents;
+import android.content.Context;
 import android.content.Intent;
 import android.media.MediaCas;
 import android.os.Bundle;
@@ -44,12 +45,15 @@ public class Activity_Login extends AppCompatActivity {
     //RequestQueue
     Cache cache = new DiskBasedCache(getCacheDir(), 1024 * 1024);
     Network network = new BasicNetwork(new HurlStack());
+    private RequestQueue requestQueue;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_login);
+
+        Context mContext = getApplicationContext();
 
         //Navegação das páginas e atribuição do conteúdo no banco
         btnRegister = (Button) findViewById(R.id.btnRegister);
@@ -96,6 +100,7 @@ public class Activity_Login extends AppCompatActivity {
             }
         });
     }
+
 
     public void openActivity_Registrar(){
         Intent intent = new Intent(this, Activity_Registrar.class);

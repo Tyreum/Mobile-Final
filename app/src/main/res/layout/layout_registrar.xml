@@ -45,11 +45,6 @@
 
     </LinearLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/id_recyclerView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
     <Button
         android:id="@+id/btnNewRegister"
         android:layout_width="wrap_content"
