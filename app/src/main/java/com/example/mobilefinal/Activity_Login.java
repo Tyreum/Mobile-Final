@@ -25,6 +25,7 @@ import com.android.volley.toolbox.HurlStack;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -38,53 +39,20 @@ public class Activity_Login extends AppCompatActivity {
     private EditText txtEmail;
     private EditText txtSenha;
 
-    //API PEDRO
-    final RequestQueue queue = Volley.newRequestQueue(this);
-    final String url = "http://127.0.0.1:5000/login";
-
-    //RequestQueue
-    Cache cache = new DiskBasedCache(getCacheDir(), 1024 * 1024);
-    Network network = new BasicNetwork(new HurlStack());
-    private RequestQueue requestQueue;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_login);
 
-        Context mContext = getApplicationContext();
-
-        //Navegação das páginas e atribuição do conteúdo no banco
-        btnRegister = (Button) findViewById(R.id.btnRegister);
-        btnRegister.setOnClickListener(new View.OnClickListener() {
+        //Navegação
+        btnLogin = (Button) findViewById(R.id.btnLogin);
+        btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                JSONObject postparams = new JSONObject();
-                try {
-                    postparams.put("email", txtEmail.getText());
-                    postparams.put("senha", txtSenha.getText());
-                }
-                catch (JSONException e){
-                    e.printStackTrace();
-                }
-                JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.POST, url, postparams,
-                        new Response.Listener<JSONObject>() {
-                            @Override
-                            public void onResponse(JSONObject response) {
-                                Toast.makeText(getApplicationContext(), response.toString(), Toast.LENGTH_LONG).show();
-                            }
-                        },
-                        new Response.ErrorListener() {
-                            @Override
-                            public void onErrorResponse(VolleyError error) {
-                            }
-                        });
-                queue.add(jsonObjReq);
+                openActivity_Home();
             }
         });
-
-        //Navegação
         btnRegister = (Button) findViewById(R.id.btnRegister);
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -102,6 +70,10 @@ public class Activity_Login extends AppCompatActivity {
     }
 
 
+    public void openActivity_Home(){
+        Intent intent = new Intent(this, Activity_Home.class);
+        startActivity(intent);
+    }
     public void openActivity_Registrar(){
         Intent intent = new Intent(this, Activity_Registrar.class);
         startActivity(intent);

@@ -1,13 +1,13 @@
 package com.example.mobilefinal;
 
-public class Bairros {
+public class Bairro {
     private String nome;
     private String id;
 
-    public Bairros(){
+    public Bairro(){
     }
 
-    public Bairros(String nome, String id){
+    public Bairro(String nome, String id){
         this.nome = nome;
         this.id = id;
     }

@@ -16,7 +16,7 @@ public class Activity_Home extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_login);
+        setContentView(R.layout.layout_home);
 
         btnAddBairro = (Button) findViewById(R.id.btnAddBairro);
         btnAddBairro.setOnClickListener(new View.OnClickListener() {

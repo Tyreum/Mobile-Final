@@ -13,18 +13,15 @@ public class Activity_PassForgot extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_login);
+        setContentView(R.layout.layout_pass_forgot);
 
         btnValidCode = (Button) findViewById(R.id.btnValidCode);
         btnValidCode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openActivity_Login();
+                Intent intent = new Intent(v.getContext(), Activity_Login.class);
+                startActivity(intent);
             }
         });
-    }
-    public void openActivity_Login(){
-        Intent intent = new Intent(this, Activity_Login.class);
-        startActivity(intent);
     }
 }

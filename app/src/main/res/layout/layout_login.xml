@@ -12,13 +12,13 @@
         android:layout_height="200sp"
         android:src="@drawable/background_splash"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="300px"/>
+        android:layout_marginTop="200px"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="950px">
+        android:layout_marginTop="750px">
 
         <TextView
             android:layout_width="match_parent"
