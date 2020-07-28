@@ -18,7 +18,7 @@ import java.util.ArrayList;
 public class BackgroundTaskBairro {
     Context context;
     ArrayList<Bairro> arrayList = new ArrayList<>();
-    String url_json = "http://127.0.0.1:5000/back-end-api-mobile/api/bairro_routes.py";
+    String url_json = "http://10.0.2.2:5000/bairro";
 
     public BackgroundTaskBairro(Context context){
         this.context = context;
@@ -33,7 +33,7 @@ public class BackgroundTaskBairro {
                         while (contador > response.length()) {
                             try {
                                 JSONObject jsonObject = response.getJSONObject(contador);
-                                Bairro bairros = new Bairro(jsonObject.getString("Nome"), jsonObject.getInt("Email"));
+                                Bairro bairros = new Bairro(jsonObject.getString("nome"), jsonObject.getInt("id"));
                                 arrayList.add(bairros);
                                 contador++;
                             } catch (JSONException e) {

@@ -28,7 +28,7 @@ def show_all():
     cont = 0
 
     for b in all_bairros:
-        output.append({"id":all_bairros[cont].id,"nome":all_bairros[cont].nome_bairro})
+        output.append({"nome":all_bairros[cont].nome_bairro, "id":str(all_bairros[cont].id)})
         cont = cont + 1
     
     return jsonify(output)
