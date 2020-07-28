@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class BackgroundTaskAlimento {
     Context context;
     ArrayList<Alimento> arrayList = new ArrayList<>();
-    String url_json = "http://127.0.0.1:5000/alimentos";
+    String url_json = "http://127.0.0.1:5000/back-end-api-mobile/api/alimento_routes.py";
 
     public BackgroundTaskAlimento(Context context){
         this.context = context;
