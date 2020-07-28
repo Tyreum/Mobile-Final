@@ -13,18 +13,21 @@ def login():
     login = LoginTable.query.filter_by(email=email, senha=senha).first()
 
     if login:
-        return jsonify({'message':'Bem vindo '+login.email+'!', 'status':200})
+        return jsonify({"status":True})
     else:
-        return jsonify({'message':'Ocorreu um erro.', 'status': 400})
+        return jsonify({"status":False})
 
 @bp_auth.route('/cadastrar', methods=['POST'])
 def register():
     email = request.json['email']
     senha = request.json['senha']
 
-    new_account = LoginTable(email, senha)
+    try:
+	    new_account = LoginTable(email, senha)
 
-    db.session.add(new_account)
-    db.session.commit()
+	    db.session.add(new_account)
+	    db.session.commit()
 
-    return jsonify({'message':'Usuário cadastrado com sucesso!'})
+	    return jsonify({"status": True})
+    except Exception as e:
+    	return jsonify({"status": False})

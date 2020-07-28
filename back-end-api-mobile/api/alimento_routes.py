@@ -12,17 +12,20 @@ def create():
     alimento = request.json['alimento']
     validade = request.json['validade']
 
-    data = '01/'+validade
+    try:
+        data = '01/'+validade
 
-    validade = datetime.datetime.strptime(data,'%d/%m/%y')
-    bairro = BairroTable.query.filter_by(nome_bairro=nome_bairro).first()
+        validade = datetime.datetime.strptime(data,'%d/%m/%y')
+        bairro = BairroTable.query.filter_by(nome_bairro=nome_bairro).first()
 
-    new_alimento = AlimentosTable(alimento, validade, bairro.id)
+        new_alimento = AlimentosTable(alimento, validade, bairro.id)
 
-    db.session.add(new_alimento)
-    db.session.commit()
+        db.session.add(new_alimento)
+        db.session.commit()
 
-    return jsonify({"message":"Alimento cadastrado com sucesso!"})
+        return jsonify({"status":True})
+    except Exception as e:
+        return jsonify({"status":False})
 
 @bp_alimentos.route('/alimentos/<idBairro>', methods=['GET'])
 def show_ball(idBairro):
