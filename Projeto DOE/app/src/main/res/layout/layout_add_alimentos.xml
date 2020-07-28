@@ -68,7 +68,7 @@
             android:orientation="horizontal"
             android:layout_marginRight="150px"
             android:layout_marginLeft="150px"
-            android:layout_marginTop="550px">
+            android:layout_marginTop="450px">
 
             <Button
                 android:id="@+id/btnVoltar"

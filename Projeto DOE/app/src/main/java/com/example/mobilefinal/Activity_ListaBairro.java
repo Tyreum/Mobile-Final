@@ -42,10 +42,8 @@ public class Activity_ListaBairro extends AppCompatActivity {
     private RequestQueue requestQueue;
 
     //Inicialização dos arrays pra mostrar posteriormente
-    String[] nomeBairros = new String[10];
-    String[] idBairros = new String[10];
-
-
+    String[] nomeBairros = new String[20];
+    String[] idBairros = new String[20];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -101,6 +99,7 @@ public class Activity_ListaBairro extends AppCompatActivity {
             }
         });
 
+        //Navegação
         btnVoltar = (Button) findViewById(R.id.btnVoltar);
         btnVoltar.setOnClickListener(new View.OnClickListener() {
             @Override
