@@ -35,6 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Alimento"
+            android:id="@+id/etRegistrarAlimento"
             android:drawableRight="@drawable/ic_adicionar"
             android:drawableTint="@color/TextDefault"
             android:layout_marginTop="40px"/>
@@ -45,7 +46,19 @@
             android:padding="15px"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Data de validade"
+            android:id="@+id/etRegistrarValidade"
+            android:hint="Data de validade mm/yy ex: 05/22"
+            android:drawableTint="@color/TextDefault"
+            android:drawableRight="@drawable/ic_adicionar"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:background="@color/EditText"
+            android:padding="15px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do bairro"
+            android:id="@+id/etRegistrarAlimentoBairro"
             android:drawableTint="@color/TextDefault"
             android:drawableRight="@drawable/ic_adicionar"/>
 
@@ -68,7 +81,7 @@
                 android:background="@color/button"/>
 
             <Button
-                android:id="@+id/btnAdicionar"
+                android:id="@+id/btnAdicionarAlimento"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableRight="@drawable/ic_adicionar"
