@@ -9,12 +9,15 @@ bp_bairro = Blueprint('bairro', __name__)
 def create():
     nome = request.json['nome']
 
-    new_bairro = BairroTable(nome)
+    try:
+        new_bairro = BairroTable(nome)
 
-    db.session.add(new_bairro)
-    db.session.commit()
+        db.session.add(new_bairro)
+        db.session.commit()
 
-    return jsonify({'message':'Bairro inserido com sucesso!', 'status':200})
+        return jsonify({"status":True})
+    except Exception as e:
+        return jsonify({"status":False})
 
 @bp_bairro.route('/bairro', methods=['GET'])
 def show_all():

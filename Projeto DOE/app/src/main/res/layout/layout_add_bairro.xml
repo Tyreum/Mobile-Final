@@ -58,6 +58,7 @@
         <EditText
             android:background="@color/EditText"
             android:padding="15px"
+            android:id="@+id/etAddBairro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Bairro"
@@ -65,33 +66,13 @@
             android:drawableTint="@color/TextDefault"
             android:layout_marginTop="40px"/>
 
-        <EditText
-            android:background="@color/EditText"
-            android:padding="15px"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Região"
-            android:layout_marginTop="10dp"
-            android:drawableTint="@color/TextDefault"
-            android:drawableRight="@drawable/ic_adicionar"/>
-
-        <EditText
-            android:background="@color/EditText"
-            android:padding="15px"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Alimentos faltando"
-            android:layout_marginTop="10dp"
-            android:drawableTint="@color/TextDefault"
-            android:drawableRight="@drawable/ic_adicionar"/>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginRight="100px"
             android:layout_marginLeft="100px"
-            android:layout_marginTop="220dp">
+            android:layout_marginTop="330dp">
 
             <Button
                 android:id="@+id/btnVoltar"
@@ -104,7 +85,7 @@
                 android:background="@color/button"/>
 
             <Button
-                android:id="@+id/btnAdicionar"
+                android:id="@+id/btnAdicionarBairro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableRight="@drawable/ic_adicionar"
