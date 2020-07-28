@@ -61,47 +61,47 @@ public class Activity_Login extends AppCompatActivity {
         btnLogin = (Button) findViewById(R.id.btnLogin);
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                JSONObject postparams = new JSONObject();
-                try {
-                    postparams.put("email", txtEmail.getText());
-                    postparams.put("senha", txtSenha.getText());
-                }
-                catch (JSONException e){
-                    e.printStackTrace();
-                }
+                public void onClick(View v) {
+                    JSONObject postparams = new JSONObject();
+                    try {
+                        postparams.put("email", txtEmail.getText());
+                        postparams.put("senha", txtSenha.getText());
+                    }
+                    catch (JSONException e){
+                        e.printStackTrace();
+                    }
 
 
-                final JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.POST, url, postparams,
-                        new Response.Listener<JSONObject>() {
-                            @Override
-                            public void onResponse(JSONObject response) {
-                                try {
-                                    Log.d("Resposta", response.getString(("status")));
-                                    Boolean status = response.getBoolean("status");
-                                    Log.d("STATUS", status.toString());
-                                    if(status == true){
-                                        Toast.makeText(getApplicationContext(), "Bem vindo!", Toast.LENGTH_SHORT).show();
-                                        openActivity_Home();
+                    final JsonObjectRequest jsonObjReq = new JsonObjectRequest(Request.Method.POST, url, postparams,
+                            new Response.Listener<JSONObject>() {
+                                @Override
+                                public void onResponse(JSONObject response) {
+                                    try {
+                                        Log.d("Resposta", response.getString(("status")));
+                                        Boolean status = response.getBoolean("status");
+                                        Log.d("STATUS", status.toString());
+                                        if(status == true){
+                                            Toast.makeText(getApplicationContext(), "Bem vindo!", Toast.LENGTH_SHORT).show();
+                                            openActivity_Home();
+                                        }
+                                        else {
+                                            Toast.makeText(getApplicationContext(), "Usuário ou senha incorretos", Toast.LENGTH_SHORT).show();
+                                        }
+                                    } catch (JSONException e) {
+
+                                        e.printStackTrace();
                                     }
-                                    else {
-                                        Toast.makeText(getApplicationContext(), "Usuário ou senha incorretos", Toast.LENGTH_SHORT).show();
-                                    }
-                                } catch (JSONException e) {
-
-                                    e.printStackTrace();
                                 }
-                            }
-                        },
-                        new Response.ErrorListener() {
-                            @Override
-                            public void onErrorResponse(VolleyError error)  {
-                                Toast.makeText(getApplicationContext(), "Erro pra carregar os dados...", Toast.LENGTH_SHORT).show();
-                                error.printStackTrace();
-                            }
-                        });
+                            },
+                            new Response.ErrorListener() {
+                                @Override
+                                public void onErrorResponse(VolleyError error)  {
+                                    Toast.makeText(getApplicationContext(), "Erro pra carregar os dados...", Toast.LENGTH_SHORT).show();
+                                    error.printStackTrace();
+                                }
+                            });
 
-                queue.add(jsonObjReq);
+                    queue.add(jsonObjReq);
             }
         });
 
