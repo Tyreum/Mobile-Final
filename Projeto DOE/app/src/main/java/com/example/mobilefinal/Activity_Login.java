@@ -49,7 +49,7 @@ public class Activity_Login extends AppCompatActivity {
 
         //API
         final RequestQueue queue = Volley.newRequestQueue(this);
-        final String url = "http://127.0.0.1:5000/back-end-api-mobile/api/login_routes.py";
+        final String url = "http://10.0.2.2:5000/login";
 
         Cache cache = new DiskBasedCache(getCacheDir(), 1024 * 1024);
         Network network = new BasicNetwork(new HurlStack());
