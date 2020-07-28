@@ -2,12 +2,12 @@ package com.example.mobilefinal;
 
 public class Bairro {
     private String nome;
-    private String id;
+    private int id;
 
     public Bairro(){
     }
 
-    public Bairro(String nome, String id){
+    public Bairro(String nome, int id){
         this.nome = nome;
         this.id = id;
     }
@@ -20,7 +20,7 @@ public class Bairro {
         this.nome = nome;
     }
 
-    public String getId(){
+    public int getId(){
         return id;
     }
 

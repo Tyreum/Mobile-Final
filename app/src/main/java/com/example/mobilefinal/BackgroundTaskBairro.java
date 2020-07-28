@@ -33,7 +33,7 @@ public class BackgroundTaskBairro {
                         while (contador > response.length()) {
                             try {
                                 JSONObject jsonObject = response.getJSONObject(contador);
-                                Bairro bairros = new Bairro(jsonObject.getString("Nome"), jsonObject.getString("Email"));
+                                Bairro bairros = new Bairro(jsonObject.getString("Nome"), jsonObject.getInt("Email"));
                                 arrayList.add(bairros);
                                 contador++;
                             } catch (JSONException e) {
