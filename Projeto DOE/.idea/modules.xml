@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Mobile-Final-Projeto DOE-MobileFinal.iml" filepath="$PROJECT_DIR$/.idea/modules/Mobile-Final-Projeto DOE-MobileFinal.iml" group="MobileFinal" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/MobileFinal.iml" filepath="$PROJECT_DIR$/.idea/modules/MobileFinal.iml" group="MobileFinal" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MobileFinal-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MobileFinal-app.iml" group="MobileFinal/app" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Projeto DOE-MobileFinal.iml" filepath="$PROJECT_DIR$/.idea/modules/Projeto DOE-MobileFinal.iml" group="MobileFinal" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Projeto DOE-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Projeto DOE-app.iml" group="MobileFinal/app" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="MobileFinal/app" />
     </modules>
   </component>

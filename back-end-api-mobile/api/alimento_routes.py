@@ -38,7 +38,7 @@ def show_ball(idBairro):
     for a in all_alimentos:
         validade = all_alimentos[cont].validade
         validade = validade.strftime('%m/%y')
-        output.append({'alimento':all_alimentos[cont].nome_alimento, 'validade':validade})
+        output.append({"id": all_alimentos[cont].id,"alimento":all_alimentos[cont].nome_alimento, "validade":validade})
         cont = cont + 1
 
     return jsonify(output)

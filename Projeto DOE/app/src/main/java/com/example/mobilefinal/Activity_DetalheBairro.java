@@ -51,9 +51,14 @@ public class Activity_DetalheBairro extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_detalhe_bairro);
 
+
+        Intent intent = getIntent();
+        String nomeReturn = intent.getStringExtra("name");
+        String idReturn = intent.getStringExtra("id");
+
         //API
         final RequestQueue queue = Volley.newRequestQueue(this);
-        final String url = "http://10.0.2.2:5000/alimentos";
+        final String url = "http://10.0.2.2:5000/alimentos/"+idReturn;
 
         listView = findViewById(R.id.ListaAlimentos);
 
@@ -66,7 +71,7 @@ public class Activity_DetalheBairro extends AppCompatActivity {
                         try {
                             for (int i = 0; i < response.length(); i++){
                                 JSONObject obj = response.getJSONObject(i);
-                                String nome = obj.getString("nome");
+                                String nome = obj.getString("alimento");
                                 String id = obj.getString("id");
                                 String validade = obj.getString("validade");
 
@@ -107,10 +112,6 @@ public class Activity_DetalheBairro extends AppCompatActivity {
         //Config da Lista
         lstIdBairros = (TextView) findViewById(R.id.idBairro);
         lstNomeBairros = (TextView) findViewById(R.id.nomeBairro);
-
-        Intent intent = getIntent();
-        String nomeReturn = intent.getStringExtra("name");
-        String idReturn = intent.getStringExtra("id");
 
         lstNomeBairros.setText(nomeReturn);
         lstIdBairros.setText(idReturn);
